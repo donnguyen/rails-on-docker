@@ -2,10 +2,8 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.1'
-gem 'mysql2'
-gem 'sqlite3'
-
+gem 'rails', '4.2.3'
+gem 'pg'
 gem 'sidekiq', '~> 3.1.4'
 
 gem 'dalli'
