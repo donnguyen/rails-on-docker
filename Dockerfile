@@ -8,7 +8,7 @@ RUN apt-get update && apt-get upgrade -y
 
 # Ruby and dependencies
 RUN apt-get install -qy curl nodejs libmysqlclient-dev libsqlite3-dev build-essential \
-                        ruby2.1 ruby2.1-dev
+                        ruby2.2 ruby2.2-dev
 RUN gem install bundler --no-ri --no-rdoc
 
 # Cache bundle install
