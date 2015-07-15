@@ -8,19 +8,14 @@ there is much room for improvement.
 
 **Todo:**
 
-  * [x] MySQL container
+  * [x] Postgres container
   * [x] Rails container using Unicorn
   * [x] Nginx as load balancer/reverse proxy
   * [x] Memcached for caching
   * [x] Sidekiq container for background jobs
   * [x] Use Brightbox Ruby Packages instead of RVM
   * [x] Using Docker Compose for orchestration
-  * [x] Use [data volume containers](https://docs.docker.com/userguide/dockervolumes/) for Mysql data
-  * [ ] Fluentd for log collection
-  * [ ] Elasticsearch for log storage
-  * [ ] Kibana for log analysis
-  * [ ] MySQL Slave for backups
-  * [ ] Replace MySQL with Postgres
+  * [x] Use [data volume containers](https://docs.docker.com/userguide/dockervolumes/) for Postgre data
 
 **Environment:**
 I am running this on a Mac using the [boot2docker](http://boot2docker.io) command line tool.
