@@ -11,8 +11,8 @@ gem 'dalli'
 gem 'sass-rails', '~> 5.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.1'
-gem 'haml-rails'
-gem 'foundation-rails'
+gem 'slim-rails', '~> 3.0.1'
+gem 'bootstrap-sass', '~> 3.3.5'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
