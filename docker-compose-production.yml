@@ -27,15 +27,11 @@ cache:
 
 web:
   build: .
-  command: bundle exec unicorn -E development -c config/unicorn.rb
-  ports:
-    - "8080:8080"
-  volumes:
-    - .:/rails
+  command: bundle exec unicorn -E production -c config/unicorn.rb
   environment:
     SECRET_KEY_BASE: abcdefg
     VIRTUAL_HOST: beer.docker
-    RAILS_ENV: development
+    RAILS_ENV: production
   links:
     - db
     - redis
@@ -43,10 +39,10 @@ web:
 
 worker:
   build: .
-  command: bundle exec sidekiq -e development -c 25
+  command: bundle exec sidekiq -e production -c 25
   environment:
     SECRET_KEY_BASE: abcdefg
-    RAILS_ENV: development
+    RAILS_ENV: production
   links:
     - db
     - redis
