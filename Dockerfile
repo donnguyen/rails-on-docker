@@ -13,8 +13,8 @@ RUN gem install bundler --no-ri --no-rdoc
 
 # Cache bundle install
 WORKDIR /tmp
-ADD Gemfile Gemfile
-ADD Gemfile.lock Gemfile.lock
+ADD Gemfile      /tmp/
+ADD Gemfile.lock /tmp/
 RUN bundle install --without development test
 
 # Add rails project to project directory
