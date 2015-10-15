@@ -1,4 +1,4 @@
-default: &default  
+default: &default
   adapter: postgresql
   pool: 5
   username: postgres
@@ -6,14 +6,18 @@ default: &default
   host: <%= ENV["DB_PORT_5432_TCP_ADDR"] %>
   port: <%= ENV["DB_PORT_5432_TCP_PORT"] %>
 
-development:  
+development:
   <<: *default
   database: myapp_development
 
-test:  
+test:
   <<: *default
   database: myapp_test
 
-production:  
+production:
   <<: *default
   database: myapp_production
+
+staging:
+  <<: *default
+  database: myapp_staging
