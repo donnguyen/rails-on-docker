@@ -43,7 +43,7 @@ web:
 
 worker:
   build: .
-  command: bundle exec sidekiq -e development -c 25
+  command: bundle exec sidekiq -C config/sidekiq.yml
   environment:
     SECRET_KEY_BASE: abcdefg
     RAILS_ENV: development
