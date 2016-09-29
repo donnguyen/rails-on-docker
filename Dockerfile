@@ -18,8 +18,8 @@ RUN wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo 
 RUN apt-get update && apt-get upgrade -y
 
 # Ruby and dependencies
-RUN apt-get install -qy curl nodejs libpq-dev postgresql-9.4 postgresql-contrib-9.4 build-essential \
-                        ruby2.2 ruby2.2-dev
+RUN apt-get install -qy curl nodejs libpq-dev postgresql-9.5 postgresql-contrib-9.5 build-essential \
+                        ruby2.3 ruby2.3-dev
 
 RUN gem install bundler --no-ri --no-rdoc
 # ENV s3_host_name=please_enter_here
